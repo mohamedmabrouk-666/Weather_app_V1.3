@@ -43,10 +43,7 @@ pipeline {
    
         stage('Unit Test') {
              steps {
-               sh '''
-                    pytest tests/test_app.py
-                    pytest tests/test_cli_app.py
-                '''
+           sh 'docker run --rm app/my-app pytest tests/'
                    }
                            }
 
