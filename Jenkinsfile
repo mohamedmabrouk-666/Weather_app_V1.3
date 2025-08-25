@@ -35,7 +35,7 @@ pipeline {
          stage('Run Docker image by name my-app') {
             steps {
                  sh 'docker rm -f my_app || true' // To delete any container using same name
-                 sh 'docker run --name my_app app/my-app'
+                 sh 'docker run -d --name my_app app/my-app'
             }
     }    
     
