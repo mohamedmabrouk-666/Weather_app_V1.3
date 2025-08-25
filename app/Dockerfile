@@ -7,6 +7,7 @@ WORKDIR /app
 COPY . /app
 
 # تثبيت الباكجات المطلوبة
+RUN pip install --upgrade pip
 RUN pip install  -r requirements.txt
 
 # فتح البورت 8000
