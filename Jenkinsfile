@@ -16,8 +16,8 @@ pipeline {
            stage('Lint Test') {
             steps {
                  sh '''
-                    flake8 /app/main.py
-                    flake8 /app/weather.py
+                    flake8 app/main.py
+                    flake8 app/weather.py
                 '''
 
                   }
