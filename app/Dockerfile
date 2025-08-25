@@ -8,7 +8,7 @@ COPY . /app
 
 # تثبيت الباكجات المطلوبة
 RUN pip install --upgrade pip
-RUN pip install  -r requirements.txt
+RUN pip install  -r app/requirements.txt
 
 # فتح البورت 8000
 EXPOSE 5000
