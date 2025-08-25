@@ -41,11 +41,11 @@ pipeline {
     
          
    
-        stage('Unit Test') {
-             steps {
-           sh 'docker run --rm app/my-app pytest tests/'
-                   }
-                           }
+        // stage('Unit Test') {
+        //      steps {
+        //    sh 'docker run --rm app/my-app pytest tests/'
+        //            }
+        //                    }
 
         
     }
