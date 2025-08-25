@@ -3,3 +3,4 @@ fastapi
 requests
 pytest
 flake8
+httpx
