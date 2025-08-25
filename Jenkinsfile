@@ -4,7 +4,7 @@ pipeline {
     stages {
 
 
-          stage('Checkout') {
+          stage('Checkout Git Hub') {
             steps {
                     git branch: 'main',
                     url: 'git@github.com:mohamedmabrouk-666/Weather_app_V1.3.git',
